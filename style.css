@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #94B4C1, #BB8ED0);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
 /* profile card */
@@ -37,6 +37,12 @@ body{
     color: #333;
 }
 
+.profile-card__description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    padding: 0 10px;
+}
 
 
 
