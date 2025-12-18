@@ -10,12 +10,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(to right bottom, #5C3E94, #F7374F);
 }
 
 /* profile card */
 .profile-card {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #8CE4FF, #0046FF);
     width: 20rem; /* 320 / 16 = 20rem */
     padding: 1.87rem 1.25rem;
     border-radius: 0.94rem;
@@ -23,25 +23,72 @@ body{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.profile-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle at center, #628141, #AEDEFC);
+}
+
 .profile-card__image {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem; /* 120 / 16 =  */
+    height: 7.5rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 0.94rem;
 }
 
+.profile-card__image:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #8CE4FF, #0046FF);
+    cursor: pointer;
+}
+
 .profile-card__introduction {
     margin-bottom: 0.625rem;
     font-size: 1.375rem;
+    color: #F8FAFC;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.profile-card__introduction:hover {
+    text-decoration: none;
+    color: #F7374F;
+}
+
+.profile-card__description-main {
+    border: 1px solid #628141;
+    border-radius: 0.94rem;
+    background: linear-gradient(135deg, #8CE4FF, #0046FF);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card__description-main:hover {
+    background: radial-gradient(circle at center, #8CE4FF, #0046FF);
+}
+
+.profile-card__description-container{
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
     color: #333;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.profile-card__description-container:hover {
+    cursor: pointer;
+    color: #fff;
 }
 
 .profile-card__description {
-    font-size: 14px;
-    color: #666;
+    color: #F8FAFC;
     line-height: 1.6;
-    padding: 0 10px;
+    padding: 0 0.625rem;
+}
+
+.profile-card__description:hover {
+    cursor: pointer;
+    color: #333;
 }
 
 
